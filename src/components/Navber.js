@@ -9,8 +9,8 @@ const Header = () => {
         <div className='relative flex items-center justify-between'>
           <Link
             to='/'
-            aria-label='proReader'
-            title='proReader'
+            aria-label='QuickQuiz'
+            title='QuickQuiz'
             className='inline-flex items-center'
           >
             <svg
@@ -105,8 +105,8 @@ const Header = () => {
                     <div>
                       <a
                         href='/'
-                        aria-label='proReader'
-                        title='proReader'
+                        aria-label='QuickQuiz'
+                        title='QuickQuiz'
                         className='inline-flex items-center'
                       >
                         <svg
@@ -125,7 +125,7 @@ const Header = () => {
                           <rect x='14' y='11' width='7' height='12' />
                         </svg>
                         <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                          proReader
+                        QuickQuiz
                         </span>
                       </a>
                     </div>
@@ -154,27 +154,27 @@ const Header = () => {
                           title='Home'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          Home
+                          Topic
                         </a>
                       </li>
                       <li>
                         <a
-                          href='/books'
-                          aria-label='Books'
-                          title='Books'
+                          href='/statistics'
+                          aria-label='statistics'
+                          title='statisticss'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          Books
+                        statistics
                         </a>
                       </li>
                       <li>
                         <a
-                          href='/about'
-                          aria-label='About Us'
-                          title='About Us'
+                          href='/blog'
+                          aria-label='blog'
+                          title='blog'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          About Us
+                          Blog
                         </a>
                       </li>
                     </ul>
