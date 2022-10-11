@@ -26,7 +26,7 @@ const QuizeCart = ({ quizdata }) => {
   console.log("name", quizdata);
   return (
     <div className="w-9/12 mx-auto my-10">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-evenly my-5">
         <h1 className="text-xl">{quizdata.question}</h1>
         <EyeIcon
           onClick={correctAnswerShow}

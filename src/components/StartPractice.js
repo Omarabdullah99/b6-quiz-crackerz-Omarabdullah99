@@ -13,7 +13,7 @@ const StartPractice = () => {
    
     return (
         <div>
-            <h1>this is {name}</h1>
+            <h1 className='text-3xl mt-5 font-bold text-blue-600 text-center'>This is {name}</h1>
            <div>
            {
             quizeDatas.map(quizdata=> <QuizeCart key={quizdata.id} quizdata={quizdata}></QuizeCart>)
