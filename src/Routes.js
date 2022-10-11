@@ -36,7 +36,8 @@ const router=createBrowserRouter([
         },
         {
           path:'SingleTopic/:id',
-          element:<StartPractice></StartPractice>
+          element:<StartPractice></StartPractice>,
+          loader:({params})=>fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
         }
        
 
