@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {  RouterProvider } from 'react-router-dom'
+
+import router from './Routes'
 
 function App() {
+  
   return (
-    <div className="App">
-      <h1>Hello tailwind</h1>
+    <div>
+    
+    <RouterProvider router={router}></RouterProvider>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
