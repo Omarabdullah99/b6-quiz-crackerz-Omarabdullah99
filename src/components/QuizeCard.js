@@ -1,21 +1,14 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import { useToasts } from "react-toast-notifications";
 import "react-toastify/dist/ReactToastify.css";
 import { EyeIcon } from "@heroicons/react/24/solid";
 
 const QuizeCart = ({ quizdata }) => {
+  const {addToast}=useToasts ()
   const correctAnswerShow = () => {
     
-    toast.info(quizdata.correctAnswer, {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-      });
+    addToast(quizdata.correctAnswer, { appearance: 'info' });
     
    
   };
@@ -24,27 +17,9 @@ const QuizeCart = ({ quizdata }) => {
     console.log(correctAnswer);
 
     if (correctAnswer === quizdata.correctAnswer) {
-      toast.success('Correct Answer!', {
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        });
+      addToast('correct answer', { appearance: 'success' });
     } else {
-      toast.error('Wrong Answer', {
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-        });
+      addToast('wrond answer', { appearance: 'error' });
     }
   };
 

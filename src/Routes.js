@@ -1,6 +1,7 @@
 import Root from "./Root"
 import { createBrowserRouter } from "react-router-dom"
 
+
 import ErrorPage from "./components/ErrorPage"
 import Home from "./components/Topic"
 import Statistics from "./components/Statistics"
