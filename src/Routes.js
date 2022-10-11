@@ -5,6 +5,7 @@ import ErrorPage from "./components/ErrorPage"
 import Home from "./components/Topic"
 import Statistics from "./components/Statistics"
 import Blog from "./components/Blog"
+import StartPractice from "./components/StartPractice"
 
 
 const router=createBrowserRouter([
@@ -33,6 +34,10 @@ const router=createBrowserRouter([
           element:<Blog></Blog>,
           
         },
+        {
+          path:'SingleTopic/:id',
+          element:<StartPractice></StartPractice>
+        }
        
 
       ]
