@@ -8,7 +8,7 @@ const Topic = () => {
   console.log(datas);
   return (
     <div className="w-9/12 mx-auto my-10 ">
-      <div className="flex  items-center gap-10">
+      <div className=" flex-none lg:flex  items-center gap-10">
         <img
           className="h-96 w-96"
           src="https://img.freepik.com/premium-vector/quiz-text-speech-symbols-concept_149152-641.jpg?w=2000"
