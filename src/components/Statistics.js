@@ -3,7 +3,9 @@ import React from 'react';
 const Statistics = () => {
     return (
         <div>
-            <h1>this is static page</h1>
+            <div>
+            <h1>What is the purpose of React Router</h1>
+            </div>
         </div>
     );
 };
